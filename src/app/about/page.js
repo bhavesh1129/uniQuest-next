@@ -56,7 +56,7 @@ const AboutPage = () => {
               <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Get the Best of Your University Experience</h2>
               <div className="leading-relaxed text-base">
                 <ul className="ml-4 list-disc">
-                  <li>Unlock the hidden gems of your university with genuine reviews and unfiltered opinions from your peers. Discover the courses, professors, and extracurricular activities that align with your interests and aspirations.
+                  <li>Unlock the hidden gems of your university with genuine reviews and unfiltered opinions from your peers. Discover the courses, and extracurricular activities that align with your interests and aspirations.
                   </li>
                   <li>
                     Make informed decisions about your academic path by tapping into the collective wisdom of your university community.
