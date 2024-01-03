@@ -89,7 +89,7 @@ const QuestionsPage = () => {
                     questions.map((question) => (
                       <div key={question?._id} className="py-8 flex flex-wrap md:flex-nowrap">
                         <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                          <span className="font-semibold uppercase title-font text-gray-700">{question?.topicName}</span>
+                          <span className="font-semibold uppercase title-font text-gray-700">#{question?.topicName}</span>
                           <span className="mt-1 text-gray-500 text-sm">{getFormattedTime(question?.createdAt)}</span>
                           <div className='flex justify-start mt-3'>
                             <PenLine className='text-sm h-4 w-4 text-gray-400' />

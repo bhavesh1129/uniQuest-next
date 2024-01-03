@@ -1,4 +1,6 @@
 import { Navbar, Footer } from "@/components";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -34,25 +36,28 @@ export default function Home() {
             </svg>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Lorem ipsum dolor sit amet consectetur dicta.
-            </h1>
+            <div>
+              {/* <Image className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl" src='/logo.png' width={1400} height={700} alt="uniQuest Logo" /> */}
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">uniQuest</h1>
+              <p className="text-xl font-semibold mt-0.5 text-gray-500">Elevate Your University Journey!</p>
+            </div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-              commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+              Unlock the full potential of your university experience with uniQuest, where questions find answers, connections become opportunities, and your journey to success begins. Join the community that's shaping the future of education and professional growth.
+              <br />
+              <span className="font-semibold">uniQuest – Your Quest, Your Future!</span>
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-2">
               <button
                 type="button"
                 className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
-                View Docs
+                <Link href='/about'>Learn More</Link>
               </button>
               <button
                 type="button"
                 className="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
-                Get Started
+                <Link href='/questions'>Get Started</Link>
               </button>
             </div>
           </div>
