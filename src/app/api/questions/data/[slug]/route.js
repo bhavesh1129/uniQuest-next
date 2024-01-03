@@ -7,8 +7,8 @@ dbConnect();
 export const GET = async (request, { params }) => {
     const slug = params.slug;
     try {
-        const Question = await Question.findOne({ slug });
-        return NextResponse.json(Question);
+        const question = await Question.findOne({ slug });
+        return NextResponse.json(question);
     } catch (error) {
         console.log(error);
         throw new Error(`Failed to fetch Question with ${slug}!`);

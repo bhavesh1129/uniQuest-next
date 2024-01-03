@@ -43,7 +43,6 @@ const Navbar = () => {
     };
 
     const router = useRouter();
-    // const [isAdmin, setIsAdmin] = useState(false);
     const [session, setSession] = useState({});
 
     const signout = async () => {
@@ -62,7 +61,6 @@ const Navbar = () => {
             try {
                 const userInfo = await axios.get('/api/users/user');
                 setSession(userInfo.data.data);
-                // setIsAdmin(userInfo.data.data.isAdmin);
             } catch (error) {
                 console.log('User info not found', error.message);
                 toast.error(error.message);

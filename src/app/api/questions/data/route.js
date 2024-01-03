@@ -6,7 +6,7 @@ dbConnect();
 
 export const GET = async (request) => {
     try {
-        const questions = await Question.find();
+        const questions = await Question.find({}).sort({ createdAt: 'desc' });
         return NextResponse.json(questions);
     } catch (error) {
         console.log(error);
