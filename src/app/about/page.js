@@ -7,7 +7,7 @@ const AboutPage = () => {
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
           <h1 className="sm:text-5xl text-5xl font-bold title-font text-gray-900">uniQuest</h1>
           <p className="text-xl font-semibold lg:w-1/2 w-full leading-relaxed text-gray-500">Navigating Academia, Connecting Futures.</p>
-          <p className='mt-8'>Here's a detailed look at the features that make <b>uniQuest</b> a must-have companion throughout your university experience.</p>
+          <p className='mt-8'>Here&apos;s a detailed look at the features that make <b>uniQuest</b> a must-have companion throughout your university experience.</p>
         </div>
         <div className="flex flex-wrap -m-8">
           <div className="xl:w-1/2 md:w-1/2 p-4">

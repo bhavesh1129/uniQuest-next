@@ -42,7 +42,7 @@ export default function Home() {
               <p className="text-xl font-semibold mt-0.5 text-gray-500">Elevate Your University Journey!</p>
             </div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Unlock the full potential of your university experience with uniQuest, where questions find answers, connections become opportunities, and your journey to success begins. Join the community that's shaping the future of education and professional growth.
+              Unlock the full potential of your university experience with uniQuest, where questions find answers, connections become opportunities, and your journey to success begins. Join the community that&apos;s shaping the future of education and professional growth.
               <br />
               <span className="font-semibold">uniQuest – Your Quest, Your Future!</span>
             </p>

@@ -1,13 +1,14 @@
 import React from 'react';
 import { ArrowLeft, Rainbow, Sparkles } from 'lucide-react'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const FindFriendsPage = () => {
   return (
     <>
       <div className="my-12 flex items-center justify-center px-2 md:my-24 md:px-0">
         <div className="lg:flex lg:items-center lg:space-x-10">
-          <img
+          <Image height={400} width={400}
             src="https://illustrations.popsy.co/white/resistance-band.svg"
             alt="question-mark"
             className="h-[400px] w-auto"
@@ -18,10 +19,10 @@ const FindFriendsPage = () => {
                 <span>Whoopsie-daisy!&nbsp;</span>
                 <Rainbow className='text-red-400' size={35} />
               </div>
-              <span>I'm diligently working on it...</span>
+              <span>I&apos;m diligently working on it...</span>
             </h1>
             <p className="mt-4 text-gray-500">
-              The page you were seeking is currently taking a break. It'll be back soon!
+              The page you were seeking is currently taking a break. It&apos;ll be back soon!
             </p>
             <p className="mt-6 text-xs w-96 font-semibold text-red-400">
               *If you find this application enchanting, shower it with stardust on my GitHub repo! If you possess magical ideas to enhance this project, weave a PR spell.
