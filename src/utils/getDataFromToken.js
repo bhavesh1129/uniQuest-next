@@ -9,3 +9,4 @@ export const getDataFromToken = async (req) => {
         throw new Error("Data could not be extracted from token " + error.message);
     }
 };
+export const dynamic = "force-dynamic"
