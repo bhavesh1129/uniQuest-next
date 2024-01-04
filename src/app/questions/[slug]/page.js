@@ -5,6 +5,7 @@ import toast, { Toaster } from 'react-hot-toast'
 import axios from 'axios'
 import { CalendarDays, PencilLine, ChevronUp, ChevronDown, Frown } from 'lucide-react'
 import Image from 'next/image'
+import getFormattedTime from '@/utils/fomattedTime'
 
 const Question = ({ params }) => {
   const [question, setQuestion] = useState({});
@@ -81,12 +82,6 @@ const Question = ({ params }) => {
     } finally {
       setLoading(false);
     }
-  };
-
-  const getFormattedTime = (timestampStr) => {
-    var options = { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric' };
-    var readableFormat = new Date(timestampStr).toLocaleDateString('en-US', options);
-    return readableFormat;
   };
 
   const toggleAccordion = (index) => {

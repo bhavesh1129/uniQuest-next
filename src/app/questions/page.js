@@ -6,6 +6,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import { PenLine } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
+import getFormattedTime from '@/utils/fomattedTime'
 
 const QuestionsPage = () => {
   const [questions, setQuestions] = useState([]);
@@ -52,12 +53,6 @@ const QuestionsPage = () => {
       console.log('Topics not found', error.message);
       toast.error(error.message);
     }
-  };
-
-  const getFormattedTime = (timestampStr) => {
-    var options = { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric' };
-    var readableFormat = new Date(timestampStr).toLocaleDateString('en-US', options);
-    return readableFormat;
   };
 
   const truncateText = (text, maxLength) => {
