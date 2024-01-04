@@ -57,7 +57,7 @@ const Navbar = () => {
         }
     };
 
-    useEffect(() => {
+    // useEffect(() => {
         const getUserInfo = async () => {
             try {
                 const userInfo = await axios.get('/api/users/user');
@@ -67,6 +67,7 @@ const Navbar = () => {
                 toast.error(error.message);
             }
         };
+        useEffect(() => {
         getUserInfo();
     }, []);
 
