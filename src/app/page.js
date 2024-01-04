@@ -6,7 +6,7 @@ import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { Footer, Navbar } from "@/components";
 
-export const BackgroundCellAnimation = () => {
+export const HomePage = () => {
   return (
     <>
       <Navbar />
@@ -157,4 +157,4 @@ const Pattern = ({
   );
 };
 
-export default BackgroundCellAnimation;
+export default HomePage;
