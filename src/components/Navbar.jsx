@@ -334,22 +334,22 @@ const Navbar = () => {
 
 export async function getServerSideProps(context) {
     try {
-        const token = context.req.cookies.token || '';
-        const response = await axios.get('/api/users/user', {
-            headers: {
-                Cookie: `token=${token}`,
-            },
-        });
-        const session = response.data.data;
-        return {
-            props: { session },
-        };
+      const token = context.req.cookies.token || '';
+      const response = await axios.get('/api/users/user', {
+        headers: {
+          Cookie: `token=${token}`,
+        },
+      });
+      const session = response.data.data;
+      return {
+        props: { session },
+      };
     } catch (error) {
-        console.log('User info not found', error.message);
-        return {
-            props: { session: null },
-        };
+      console.log('User info not found', error.message);
+      return {
+        props: { session: null },
+      };
     }
-}
+  }
 
 export default Navbar
