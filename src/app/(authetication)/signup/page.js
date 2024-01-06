@@ -78,6 +78,7 @@ export default function SignupPage() {
                                             type="text"
                                             placeholder="Full Name"
                                             id="name"
+                                            autoComplete='off'
                                             value={userData.name} onChange={(e) => setUserData({ ...userData, name: e.target.value })}
                                         ></input>
                                     </div>
@@ -92,7 +93,7 @@ export default function SignupPage() {
                                             className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                                             type="email"
                                             placeholder="Email"
-                                            id="email"
+                                            id="email" autoComplete='off'
                                             value={userData.email} onChange={(e) => setUserData({ ...userData, email: e.target.value })}
                                         ></input>
                                     </div>
